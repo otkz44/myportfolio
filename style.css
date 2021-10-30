@@ -1,17 +1,64 @@
 @charset "UTF-8";
 
-ul {
-    list-style: none;
+a {
+    text-decoration: none;
+}
+
+/* 背景画像
+----------------------------------------*/
+.big-bg {
+    background-size: cover;
+    background-position: center top;
+}
+
+#home {
+    background-image: url(images/bg-img.jpg);
+    min-height: 100vh;
+}
+
+/* HEADER
+----------------------------------------*/
+header {
+        background-color: white;
+        opacity: 0.8;
+        position: fixed;
+        width: 100vw;
+        margin: 0 auto;
+        padding: 0 4%;
+}
+
+header h1 {
+    margin: 10px 0 10px;
+}
+
+.page-hedder {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
-li {
-    border: 1px solid black;
-    padding: 10px;
-    margin: 10px;
+.main-nav {
+    display: flex;
+    list-style: none;
+    font-size: 1.4rem;
+    margin: 15px 0 15px;
 }
 
+.main-nav li {
+    margin-left: 70px;
+}
+
+.main-nav a {
+    color: black;
+}
+
+.main-nav a:hover {
+    color: green;
+}
+
+/* FOOTER
+----------------------------------------*/
 footer {
+    background-color: white;
+    opacity: 0.8;
     text-align: center;
 }
